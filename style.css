@@ -1,0 +1,112 @@
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --blue: hsl(179, 100%, 13%);
+    --p-color: hsla(0, 0%, 100%, 0.75);
+    --h-color: hsl(0, 0%, 95%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+@media (max-width:376px) {
+    .column {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-between;
+        color: var(--p-color);
+        font-family: 'Big Shoulders Display', cursive;
+        padding: 30px;
+    }
+    .title {
+        color: var(--h-color);
+        text-transform: uppercase;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .first {
+        background-color: var(--orange);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .second {
+        background-color: var(--cyan);
+    }
+    .third {
+        background-color: var(--blue);
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .first button {
+        color: var(--orange);
+    }
+    .second button {
+        color: var(--cyan);
+    }
+    .third button {
+        color: var(--blue);
+    }
+    button {
+        border-radius: 20px;
+        min-width: 150px;
+        width: 50%;
+        border: white;
+        padding: 10px;
+    }
+}
+
+@media (min-width:376px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        display: flex;
+    }
+    .column {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-between;
+        color: var(--p-color);
+        font-family: 'Big Shoulders Display', cursive;
+        padding: 30px;
+    }
+    .title {
+        color: var(--h-color);
+        text-transform: uppercase;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .first {
+        background-color: var(--orange);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .second {
+        background-color: var(--cyan);
+    }
+    .third {
+        background-color: var(--blue);
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    button {
+        border-radius: 20px;
+        min-width: 150px;
+        width: 50%;
+        border: white;
+        padding: 10px;
+    }
+    .first button {
+        color: var(--orange);
+    }
+    .second button {
+        color: var(--cyan);
+    }
+    .third button {
+        color: var(--blue);
+    }
+}
